@@ -1,0 +1,96 @@
+/* top of page */
+body {
+  background: #ffffff;
+}
+header {
+  padding: 10px;
+  background-color: #ffffff;
+  color: EEE4DB;
+}
+/* link styling*/
+a:link,
+a:visited {
+  color: rgb(130, 112, 102);
+  text-decoration: none;
+}
+a:hover {
+  color: #000000;
+}
+a:active {
+  color: #D5E1D5;
+}
+/* main content area */
+h1,
+h3 {
+  color: #ffffff;
+  font-weight: lighter;
+}
+h1:hover,
+h3:hover {
+  color: rgb(130, 112, 102);
+}
+nav {
+  color: #e5be9eff;
+  text-align: left;
+  word-break: keep-all;
+  height: 10px;
+
+}
+main {
+  margin: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 50px;
+  background-color: #EEE4DB;
+  text-align: center;
+  line-height: 30px;
+}
+h2 {
+  color: rgb(130, 112, 102);
+  font-weight: lighter;
+}
+h2:hover {
+  color: #ffffff;
+}
+/* profile photo */
+main>img {
+  border-radius: 50%;
+  width: 150px;
+}
+/* intro bullet points */
+main>div>article>ul {
+  text-align: left;
+  width: 400px;
+  list-style-position: outside;
+}
+main>div article {
+  width: 400px;
+  text-align: justify;
+  margin: 25px auto;
+}
+/* contact list */
+main>div>article>ol {
+  text-align: left;
+  color: #C1A192;
+}
+/* bottom of page */
+footer {
+  text-align: center;
+  padding: 6px;
+  background-color: #ffffff;
+}
+footer p {
+  font-size: 12px;
+  color: rgb(130, 112, 102);
+}
+/*
+test-colors {
+color: #D5E1D5;
+color: #D1C8B8;
+color: #EEE4DB;
+color: #B9BFB8;
+color: #C1A192;
+color: rgb(131, 112, 103);
+}
+*/
