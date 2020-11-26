@@ -34,7 +34,6 @@ nav {
   text-align: left;
   word-break: keep-all;
   height: 10px;
-
 }
 main {
   margin: 5%;
@@ -59,18 +58,18 @@ main>img {
   width: 150px;
 }
 /* intro bullet points */
-main>div>article>ul {
+main >article > ul {
   text-align: left;
   width: 400px;
   list-style-position: outside;
 }
-main>div article {
+main > article {
   width: 400px;
   text-align: justify;
   margin: 25px auto;
 }
 /* contact list */
-main>div>article>ol {
+main > article > ol {
   text-align: left;
   color: #C1A192;
 }
