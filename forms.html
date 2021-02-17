@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contact</title>
+    <link href="forms-style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <!-- navigation links -->
+        <nav>
+            <a href="index.html"><b>Home</b></a>
+            <a href="index.html/#about"><b>About Me</b></a>
+            <a href="index.html/#contact"><b>Contact</b></a>
+        </nav>
+        <h1>HTML Forms Practice</h1>
+    </header>
+
+    <main>
+        <form action="https://formspree.io/dev@mgoicochea.com" method="POST">
+            <label for="user-name">Name:</label>
+            <input id="user-name" type="text" name="name" autofocus="on" placeholder="Full name" />
+
+            <label for="email">Email:</label>
+            <input id="email" type="text" name="email" required placeholder="Email address" />
+
+            <label for="form-message">Your message:</label>
+            <textarea id="form-message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <script src="script.js"></script>
+    </main>
+</body>
+
+</html>
