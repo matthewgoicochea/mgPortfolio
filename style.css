@@ -1,95 +1,210 @@
-/* top of page */
-body {
-  background: #ffffff;
-}
 header {
-  padding: 10px;
-  background-color: #ffffff;
-  color: EEE4DB;
+    padding: 12px 0;
+    background: rgb(97, 137, 247);
 }
-/* link styling*/
-a:link,
-a:visited {
-  color: rgb(130, 112, 102);
-  text-decoration: none;
-}
-a:hover {
-  color: #000000;
-}
-a:active {
-  color: #D5E1D5;
-}
-/* main content area */
-h1,
-h3 {
-  color: #ffffff;
-  font-weight: lighter;
-}
-h1:hover,
-h3:hover {
-  color: rgb(130, 112, 102);
-}
+
 nav {
-  color: #e5be9eff;
-  text-align: left;
-  word-break: keep-all;
-  height: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
 }
+
+nav a {
+    padding: 0 10px;
+    font-weight: lighter;
+}
+
 main {
-  margin: 5%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: lighter;
-  padding: 50px;
-  background-color: #EEE4DB;
-  text-align: center;
-  line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    line-height: 20px;
+    text-align: center;
 }
+
+h1 {
+    color: #000;
+    margin: 0;
+    padding-top: 24px;
+}
+
+h3 {
+    color: #000;
+}
+
 h2 {
-  color: rgb(130, 112, 102);
-  font-weight: lighter;
+    color: rgb(31, 85, 231);
 }
-h2:hover {
-  color: #ffffff;
+
+h1,
+h2,
+h3 {
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
 }
-/* profile photo */
-main>img {
-  border-radius: 50%;
-  width: 150px;
+
+h4 {
+    margin-top: 20px;
+    color: rgb(31, 85, 231);
 }
-/* intro bullet points */
-main >article > ul {
-  text-align: left;
-  width: 400px;
-  list-style-position: outside;
+
+img {
+    border-radius: 50%;
+    width: 150px;
 }
-main > article {
-  width: 400px;
-  text-align: justify;
-  margin: 25px auto;
+
+ul {
+    text-align: left;
+    list-style-position: outside;
 }
-/* contact list */
-main > article > ol {
-  text-align: left;
-  color: #C1A192;
+
+li {
+    font-size: 14px;
 }
-/* bottom of page */
+
+.about {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+hr {
+    height: 1px;
+    border-width: 0;
+    width: 90%;
+    // background-color: rgb(130, 112, 102);
+    background: rgb(31, 85, 231);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    padding: 0 10px;
+    padding-bottom: 4px;
+}
+
+form input {
+    width: 85%;
+    justify-content: flex-start;
+    color: rgb(130, 112, 102);
+    margin-bottom: 16px;
+}
+
+form textarea {
+    width: 85%;
+    height: 4.75rem;
+    color: rgb(130, 112, 102);
+    margin-bottom: 10px;
+
+}
+
+form button {
+    display: block;
+    margin: 0 auto;
+    background: rgb(31, 85, 231);
+    color: #EEE4DB;
+    border-width: 0;
+    border-radius: 5%;
+}
+
+.group {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+}
+
+.item {
+    flex: 1;
+    width: 100%;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.item h3 {
+    font-size: 15px;
+}
+
+nav a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #bdbdbd;
+}
+
+a:visited,
+a:link {
+    color: rgb(31, 85, 231);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #bdbdbd;
+}
+
+a:active {
+    color: #D5E1D5;
+}
+
+strong {
+    font-weight: bold;
+}
+
 footer {
-  text-align: center;
-  padding: 6px;
-  background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+    background: #fff;
 }
+
+footer a img {
+    height: 12%;
+    width: 12%;
+    text-align: center;
+    margin: 0 20px;
+}
+
 footer p {
-  font-size: 12px;
-  color: rgb(130, 112, 102);
+    color: #000;
+    margin: 5px 0;
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
 }
-/*
-test-colors {
-color: #D5E1D5;
-color: #D1C8B8;
-color: #EEE4DB;
-color: #B9BFB8;
-color: #C1A192;
-color: rgb(131, 112, 103);
+
+@media all and (min-width: 600px) {
+    nav {
+        justify-content: flex-start;
+    }
+
+    .desktop-group {
+        display: flex;
+    }
+
+    .desktop-item {
+        flex: 1;
+        flex-direction: column;
+    }
+
+    h2 {
+        margin-top: 40px;
+    }
+
+    ul {
+        text-align: center;
+        list-style-type: none;
+    }
+
+    li {
+        margin: 2px;
+        padding: 2px;
+    }
 }
-*/

@@ -1,78 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- Components needed to run basic web page -->  
+<html>
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Matthew Goicochea</title>
-  <!-- normalize.css link to make sure my website is compatible with a wide range of devices -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Matthew Goicochea</title>
+    <!-- normalize.css link to make sure my website is compatible with a wide range of devices -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-<!-- Main content of web page -->
+<!-- Main content of page -->
+
 <body>
-  <header>
-    <!-- navigation links -->
-    <nav>
-      <a href="/"><b>Home</b></a>
-      <a href="#about"><b>About Me</b></a>
-      <a href="#contact"><b>Contact</b></a>
-      <a href="forms.html"><b>Forms</b></a>
-    </nav>
-  </header>
-  <main>
-    <!-- NO repeated content -->
-    <h1>Matthew Goicochea</h1>
-    <h3>Software Engineer</h3>
-    <!-- Change Profile Photo Here -->
-    <img src="images/profile-photo.jpg" alt="Headshot of Matthew Smiling"/>
-    <!-- Content chunks -->
-      <article id="intro">
-        <h2>Hello, I'm Matthew</h2>
-        <p>I am a software engineer living in New York City.</p>
-        <p>Aside from coding, my interests include:</p>
-        <ul>
-          <li>Sustainable screen printing, and making other eco-friendly crafts.
-          </li>
-          <li>Making computer music with friends around the world.
-          </li>
-          <li>Learning new things and sharing what I've discovered with others.
-          </li>   
-        </ul>
+    <header>
+        <nav>
+            <a href="/"><b>Home</b></a>
+            <a href="#about"><b>About Me</b></a>
+            <a href="#contact"><b>Contact</b></a>
+            <a href="#projects"><b>Projects</b></a>
+            <!-- <a href="forms.html"><b>Forms</b></a> -->
+        </nav>
+    </header>
+    <main>
+        <div class="desktop-group">
+            <div class="desktop-item">
+                <h1>Matthew Goicochea</h1>
+                <h3>Software Engineer</h3>
+                <img src="images/profile-photo.jpg" alt="Headshot of Matthew Smiling" />
+            </div>
+            <div class="desktop-item">
+                <!-- Introduction -->
+                <article>
+                    <h2 style="color: #000">Hello, I'm Matthew.</h2>
+                    <p>I am a <strong>software engineer</strong> living in <strong>New York City</strong>.</p>
+                    <p>Aside from coding, my interests include:</p>
+                    <ul>
+                        <li>Sustainable screen printing, and making other <strong>eco-friendly crafts</strong>.
+                        </li>
+                        <li>Making computer <strong>music</strong> with friends around the world.
+                        </li>
+                        <li>Learning new things and sharing what I've discovered with others.
+                        </li>
+                    </ul>
+            </div>
+        </div>
         <p>Please feel free to <a href="#contact">contact me</a> for any inquiries!</p>
-      </article>
-    <hr>
-      <article id="about">
-        <h2>About Matthew</h2>
-        <p>After graduating from St. John's University, I decided I wanted to start a few businesses. I had so many ideas and executed them all at once. This led to <b>chaos</b>.</p>
-        <p>After many ups and downs. I realized the business experience I've gained was worth its weight in <del>gold</del> bitcoin. I then decided my next step would be to learn how to code!</p>
-        <p>If life were a puzzle, I'd say that learning to code is the last part I need to begin piecing it together. Coding helps my businesses run smoother, and more efficiently. 
-          I hope to work hard with other like-minded individuals who are passionate about their interests and would also like to build something that makes lives better.</p>
-      </article>
-    <hr>
-      <!-- Contact information -->
-      <article id="contact">
-        <h2>Contact Matthew</h2>
-        <p>I look forward to hearing from you!</p>
-        <p>Please don't hesitate to connect with me.</p>
-        <ol>
-          <li>
-            <a href="https://www.linkedin.com/in/matthew-goicochea" target="_blank"><b>Linkedin</b></a>
-          </li>
-          <li>
-            <a href="https://github.com/matthewgoicochea" target="_blank"><b>GitHub</b></a>
-          </li>
-        </ol>
-      </article>
-  </main>
-  <!--END of main content area-->
-  <footer>
-    <a href="https://www.linkedin.com/in/matthew-goicochea" target="_blank"><img src="images/linkedin-logo.png" width="50" alt="Linkedin logo"></a>
-    <a href="https://github.com/matthewgoicochea" target="_blank"><img src="images/github-logo.png" width="52" alt="Github logo" ></a>
-    <p>Copyright © 2020 Matthew Goicochea</p>
-  </footer>
+        </article>
+        <hr>
+        <!-- About Me -->
+        <article id="about" class="about">
+            <h2>About Me</h2>
+            <p>After graduating from St. John's University, I set out to start my own business with my <strong>B.S. in Communication Arts</strong> in my hand, my eyes to the sky, and a glint of hope in my heart.</p>
+            <p>Of course, my first business failed – and the second, and the third. But while others will count them as failures. I see them as lessons. Beautiful, shiny, expensive lessons in all their glory. After many ups and downs, I realized the <strong>business experience</strong> I've gained was worth its weight in <del>gold</del> bitcoin. Then, I decided my next step would be to learn how to code!</p>
+            <p>My passion for web development grows everyday as I keep learning new things and branching my world. I hope to construct <strong>creative solutions</strong> with other like-minded individuals who are passionate about their interests. I think together, we can create beautiful things with great utility.</p>
+            <h4>Services</h4>
+            <ul>
+                <li>Developing front end website architecture.</li>
+                <li>Designing user interactions on web pages.</li>
+                <li>Developing back end applications.</li>
+                <li>Ensuring cross-platform optimization for mobile phones.</li>
+                <li>Design and Develop APIs.</li>
+                <li>Creating servers and databases for functionality.</li>
+            </ul>
+        </article>
+        <hr>
+        <!-- Contact -->
+        <div class="desktop-group">
+            <div class="desktop-item">
+                <article id="contact">
+                    <h2>Contact Me</h2>
+                    <p>I look forward to hearing from you!</p>
+                    <p>Connect with me on <a href="https://www.linkedin.com/in/matthew-goicochea">LinkedIn</a>.</p>
+                    <p>Check out my <a href="https://github.com/matthewgoicochea">Github</a>.</p>
+            </div>
+            <div class="desktop-item">
+                <form>
+                    <label for="user-name">Name:</label>
+                    <input id="user-name" type="text" name="name" placeholder="Full name" autofocus="on" />
+                    <label for="email">Email:</label>
+                    <input id="email" type="text" name="email" required placeholder="Email address" />
+                    <label for="email-message">Your Message:</label>
+                    <textarea id="email-message" name="message" required placeholder="Type your message here"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                </article>
+            </div>
+        </div>
+        <hr>
+        <!-- Projects -->
+        <article id="projects">
+            <h2>My Projects</h2>
+            <div class="group">
+                <div class="item">
+                    <h3>Project Title 1</h3>
+                    <img alt="project 1 image">
+                    <p>Project description one. What it does: Who's it for: Why I built it:</p>
+                    <p>Skills Used - The stack</p>
+                    <a href="https://github.com/matthewgoicochea">github repo</a>
+                    <a href="#projects">see it live</a>
+                </div>
+                <div class="item">
+                    <h3>Project Title 2</h3>
+                    <img alt="project 2 image">
+                    <p>project description two. What it does: Who's it for: Why I built it:</p>
+                    <p>Skills Used - The stack</p>
+                    <a href="https://github.com/matthewgoicochea">github repo</a>
+                    <a href="#projects">see it live</a>
+                </div>
+            </div>
+            <div class="group">
+                <div class="item">
+                    <h3>Project Title 3</h3>
+                    <img alt="project 3 image">
+                    <p>project description three. What it does: Who's it for: Why I built it:</p>
+                    <p>Skills Used - The stack</p>
+                    <a href="https://github.com/matthewgoicochea">github repo</a>
+                    <a href="#projects">see it live</a>
+                </div>
+                <div class="item">
+                    <h3>Project Title 4</h3>
+                    <img alt="project 4 image">
+                    <p>project description four. What it does: Who's it for: Why I built it:</p>
+                    <p>Skills Used - The stack</p>
+                    <a href="https://github.com/matthewgoicochea">github repo</a>
+                    <a href="#projects">see it live</a>
+                </div>
+            </div>
+        </article>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <a href="https://www.linkedin.com/in/matthew-goicochea" target="_blank"><img src="images/linkedin-logo.png" width="50" alt="Linkedin logo"></a>
+        <a href="https://github.com/matthewgoicochea" target="_blank"><img src="images/github-logo.png" width="52" alt="Github logo"></a>
+        <p>Copyright © 2021 Matthew Goicochea</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
-<!--JavaScript Scripts to execute 
-<script src="script.js"></script>
--->
+
 </html>
